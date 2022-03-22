@@ -1,0 +1,103 @@
+
+.produtos {
+    background: var(--cinza-claro);
+    color: var(--azul-escuro);
+
+}
+
+
+
+.produtos__box {
+    width: 100%;
+    height: auto;
+    margin: 3rem auto;
+
+}
+
+.produtos__kitnet {
+    display: flex;
+    flex-direction: column;
+}
+
+.produtos__moradia {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.produtos__foto {
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    height: 40vh;
+
+}
+
+.produtos__titulo-h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0 0 2rem;
+}
+
+.produtos__descricao {
+    width: 100%;
+    outline: lightgrey solid 1px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+.produtos__kitnet-foto {
+    background-image: url(../img/kitnet.jpg);
+    border-radius: 5% 5% 0 0;
+}
+
+.produtos__kitnet-descricao {
+    border-radius: 0 0 5% 5%;
+}
+
+.produtos__moradia-foto {
+    background-image: url(../img/moradia-compartilhada.jpg);
+    border-radius: 5% 5% 0 0;
+}
+
+.produtos__moradia-descricao {
+    border-radius: 0 0 5% 5%;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .produtos__box {
+        flex-direction: row;
+    }
+
+    .produtos__foto {
+        width: 50%;
+        height: 400px;
+    }
+
+    .produtos__descricao {
+        width: 50%;
+    }
+    
+    .produtos__kitnet-foto {
+        background-image: url(../img/kitnet.jpg);
+        border-radius: 5% 0 0 5%;
+    }
+    
+    .produtos__kitnet-descricao {
+        border-radius: 0 5% 5% 0;
+    }
+    
+    .produtos__moradia-foto {
+        background-image: url(../img/moradia-compartilhada.jpg);
+        border-radius: 0 5% 5% 0;
+    }
+    
+    .produtos__moradia-descricao {
+        border-radius: 5% 0 0 5%;
+    }
+
+}

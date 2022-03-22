@@ -1,0 +1,53 @@
+
+.chamada {
+    padding: 3rem 0;
+    background-image: url(../img/principal.jpg);
+    background-size: cover;
+    background-position: center top;
+
+}
+
+.busca {
+    padding: 2rem;
+    height: auto;
+    width: 100%;
+    background: var(--cinza-claro);
+    color: var(--azul-escuro);
+	border-radius: 1rem;
+
+
+}
+
+.busca__titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 1rem;
+}
+
+.busca__form {
+    font-size: 1.5rem;
+}
+
+.busca__label {
+    display: block;
+    margin: 2rem 0 1rem;
+}
+
+.busca__select {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--azul-escuro);
+    background: var(--cinza-claro);
+}
+
+
+@media screen and (min-width: 1024px) {
+    .busca {
+        width: 500px;
+    }
+}
+
+
+

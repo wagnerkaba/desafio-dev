@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>F4Life Moradias Universitárias</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/cabecalho.css">
+    <link rel="stylesheet" href="./assets/css/rodape.css">
+    <link rel="stylesheet" href="./assets/css/fale-conosco.css">
+
+    <!-- biblioteca de icones do font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,700&family=Open+Sans:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- INICIO: HEADER carregado através de JQUERY -->
+    <header id="header"></header>
+    <!-- FIM: HEADER carregado através de JQUERY -->
+
+
+    <main>
+        <section class="fale-conosco container">
+            <div class="fale-conosco__moldura">
+                <form novalidate class="fale-conosco__form" id="formFaleConosco" action="obrigado.html">
+                    <fieldset class="fale-conosco__fieldset">
+                        <legend class="fale-conosco__titulo">Fale Conosco</legend>
+
+                        <label class="fale-conosco__label">Email: </label>
+                        <input class="fale-conosco__input" type="email" name="email" id="email" placeholder="user@domain.com" data-tipo="email" pattern="^(\w\.?){1,32}@(\w\.?){1,16}(\.\w{2,3})+$" required/>
+                        <span class="fale-conosco__erro" id="erroEmail" aria-live="polite"></span>
+
+                        
+                        <label class="fale-conosco__label">Mensagem:</label>
+                        <textarea class="fale-conosco__input" cols="70" rows="10" id="mensagem" data-tipo="mensagem" required></textarea>
+                        <span class="fale-conosco__erro" id="erroMensagem" aria-live="polite"></span>
+
+                    </fieldset>
+                    <input type="submit" value="Enviar Mensagem" class="fale-conosco__botao">
+                </form>
+            </div>
+        </section>
+        <script src="./assets/js/fale-conosco.js"></script>
+    </main>
+
+
+
+
+
+
+    <!-- INICIO: FOOTER carregado através de JQUERY -->
+    <footer id="footer">
+        <script src="./assets/js/jquery-3.3.1.js"></script>
+        <script src="./assets/js/header-footer.js"></script>
+    </footer>
+    <!-- FIM: FOOTER carregado através de JQUERY -->
+
+</body>
+
+</html>

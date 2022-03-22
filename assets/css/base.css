@@ -1,0 +1,81 @@
+
+/* Since the result of using the box-sizing: border-box; is so much better, many developers want all elements on their pages to work this way. */
+/* The code below ensures that all elements are sized in this more intuitive way. */
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --azul-escuro: #132235;
+    --azul-claro: #6ddad3;
+    --cinza-claro: #FEFEFE;
+
+
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+    /* O código abaixo é solução do Stack Overflow para manter o footer sempre no fim da página */
+    /* Sem esse código, pode ocorrer de a página ficar com um espaço em branco abaixo do footer */
+    /* https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b */
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+}
+
+
+.container {
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+
+h1 {
+    margin-top: 3rem;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+p {
+    margin: 1rem 0 1rem;
+}
+
+.botao {
+    margin: 3rem 0 0;
+    width: 100%;
+    padding: 1rem 0;
+    background: var(--azul-escuro);
+    color: var(--azul-claro);
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.5rem;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.botao:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-left: calc((100% - 940px)/2);
+        padding-right: calc((100% - 940px)/2);
+    }
+    .botao {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+}

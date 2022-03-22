@@ -1,0 +1,92 @@
+
+
+.fale-conosco__moldura {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 2rem 0 2rem 0;
+    border-radius: 5%;
+    padding: 3rem;
+    box-sizing: border-box;
+
+}
+
+.fale-conosco__titulo {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.fale-conosco__fieldset {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.fale-conosco__label {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+
+.fale-conosco__input {
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 1rem;
+    margin: 1rem 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.fale-conosco__erro {
+    width  : 100%;
+    padding: 1rem;
+  
+    font-size: 1rem;
+    color: white;
+    background-color: #900;
+    border-radius: 0.5rem;
+  
+    box-sizing: border-box;
+    display: none;
+}
+
+
+
+.fale-conosco__botao {
+    display: block;
+    margin: 3rem auto;
+    width: 100%;
+    padding: 1rem 0;
+    background: var(--azul-escuro);
+    color: var(--azul-claro);
+    font-size: 1rem;
+
+    border: none;
+    border-radius: 0.5rem;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.fale-conosco__botao:hover {
+    transform: scale(1.1);
+}
+
+.fale-conosco__icone-concluido {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    margin: 0 auto;
+
+    margin-bottom: 1rem;
+
+    background-image: url(../img/checkmark.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 1024px) {
+    .fale-conosco__botao {
+        width: 50%;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+}

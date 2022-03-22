@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>F4Life Moradias Universitárias</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/chamada.css">
+    <link rel="stylesheet" href="./assets/css/produtos.css">
+    <link rel="stylesheet" href="./assets/css/cabecalho.css">
+    <link rel="stylesheet" href="./assets/css/rodape.css">
+    <link rel="stylesheet" href="./assets/css/multislider.custom.css">
+
+
+
+    <!-- biblioteca de icones do font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,700&family=Open+Sans:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- INICIO: HEADER carregado através de JQUERY -->
+    <header id="header"></header>
+    <!-- FIM: HEADER carregado através de JQUERY -->
+
+    <main>
+        <section class="chamada">
+
+            <section class="container">
+                <section class="busca">
+                    <form class="busca__form">
+                        <fieldset>
+                            <legend class="busca__titulo">Encontre um lugar para morar</legend>
+
+                            <label class="busca__label">Estado</label>
+                            <!-- select de cidades é preenchido com a função buscarCidades() de acordo com o estado escolhido pelo usuario -->
+                            <select class="busca__select" onchange="buscarCidades(this.value)" required>
+                                <option value="">Selecione</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="PR">Paraná</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="SC">Santa Catarina</option>
+                            </select>
+                            <label class="busca__label">Cidade</label>
+                            <select class="busca__select" id="selectCidade" disabled required>
+                                <option value="">Selecione</option>
+
+
+                            </select>
+                        </fieldset>
+                        <input type="submit" value="Buscar imóveis" class="botao">
+                    </form>
+                </section>
+            </section>
+
+
+        </section>
+
+
+
+        <section class="produtos container">
+
+            <h1>Aqui você escolhe como quer morar</h1>
+
+            <section class="produtos__box produtos__kitnet">
+
+                <section class="produtos__foto produtos__kitnet-foto"></section>
+
+                <section class="produtos__descricao produtos__kitnet-descricao ">
+                    <div>
+                        <h2 class="produtos__titulo-h2">Kitnets</h2>
+                        <p>Para quem prefere privacidade e liberdade para fazer o que quiser.</p>
+                        <p> Selecione um imóvel que combina com você, agende visitas online e alugue sem fiador.</p>
+                    </div>
+
+                    <input type="submit" value="Quero conhecer" class="botao">
+                </section>
+
+            </section>
+
+            <section class="produtos__box produtos__moradia">
+
+                <section class="produtos__descricao produtos__moradia-descricao">
+                    <div>
+                        <h2 class="produtos__titulo-h2">Moradia compartilhada</h2>
+                        <p>Para quem quer dividir custos e conhecer novas pessoas.</p>
+                        <p>Conte com nosso sistema de inteligência artificial para encontrar as pessoas com quem você
+                            terá mais afinidade para dividir uma moradia.</p>
+                    </div>
+                    <input type="submit" value="Quero conhecer" class="botao">
+                </section>
+
+
+                <section class="produtos__foto produtos__moradia-foto"> </section>
+
+
+
+            </section>
+
+
+        </section>
+
+        <section class="destaques container">
+
+            <h1>Moradias em destaque</h1>
+
+            <div id="exampleSlider">
+
+                <div class="MS-content">
+                    <div class="item">
+
+                        <img class="destaques__foto" src="./assets/img/moradia1.jpg" alt="foto">
+
+                    </div>
+                    <div class="item">
+                        <img class="destaques__foto" src="./assets/img/moradia2.jpg" alt="foto">
+                    </div>
+                    <div class="item">
+                        <img class="destaques__foto" src="./assets/img/moradia3.jpg" alt="foto">
+                    </div>
+                    <div class="item">
+                        <img class="destaques__foto" src="./assets/img/moradia4.jpg" alt="foto">
+                    </div>
+                    <div class="item">
+                        <img class="destaques__foto" src="./assets/img/moradia5.jpg" alt="foto">
+                    </div>
+                </div>
+                <div class="MS-controls">
+                    <button class="MS-left"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                    <button class="MS-right"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+
+        </section>
+
+        <script src="./assets/js/busca-cidades.js"></script>
+    </main>
+
+    <!-- INICIO: FOOTER carregado através de JQUERY -->
+    <footer id="footer">
+        <script src="./assets/js/jquery-3.3.1.js"></script>
+        <script src="./assets/js/header-footer.js"></script>
+    </footer>
+    <!-- FIM: FOOTER carregado através de JQUERY -->
+
+    <!-- Multislider utilizado para apresentação do carrossel -->
+    <script src="./assets/js/multislider.min.js"></script>
+    <script src="./assets/js/destaques.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+.cabecalho {
+    background: var(--azul-escuro);
+    color: var(--azul-claro);
+    padding: 0 3rem 1rem;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.menu__link {
+    color: var(--azul-claro);
+    padding: 0.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+}
+
+.menu__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.logo {
+    max-width: 80%;
+}
+
+@media screen and (min-width: 1024px) {
+    .cabecalho {
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu__nav {
+        flex-direction: row;
+    }
+    .cabecalho {
+        padding-bottom: 0;
+    }
+    .menu__link {
+        font-size: 1.3rem;
+    }
+
+    .menu__link:hover {
+        border-bottom: 2px solid var(--azul-claro);
+    }
+}

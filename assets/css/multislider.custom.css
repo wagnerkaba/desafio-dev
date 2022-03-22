@@ -1,0 +1,89 @@
+
+.destaques__foto {
+    width: 100%;
+}
+
+#exampleSlider {
+    margin: 2rem 0 4rem;
+    position: relative;
+}
+
+
+#exampleSlider .MS-content {
+    margin: 15px 5%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+    #exampleSlider .MS-content {
+        margin: 0;
+    }
+}
+
+#exampleSlider .MS-content .item {
+    display: inline-block;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    vertical-align: top;
+    border-right: none;
+    width: 33%;
+    border-radius: 0.5rem;
+    margin: .5rem;
+}
+
+
+@media (max-width: 767px) {
+    #exampleSlider .MS-content .item {
+        width: 80%;
+    }
+}
+
+#exampleSlider .MS-content .item p {
+    font-size: 30px;
+    text-align: center;
+    line-height: 1;
+    vertical-align: middle;
+    margin: 0;
+    padding: 10px 0;
+}
+
+#exampleSlider .MS-controls button {
+    position: absolute;
+    border: none;
+    background: transparent;
+    font-size: 30px;
+    outline: 0;
+    top: 35px;
+}
+
+@media (max-width: 767px) {
+    #exampleSlider .MS-controls button {
+        display: none;
+    }
+}
+
+#exampleSlider .MS-controls button:hover {
+    cursor: pointer;
+}
+
+#exampleSlider .MS-controls .MS-left {
+    left: 10px;
+}
+
+@media (max-width: 992px) {
+    #exampleSlider .MS-controls .MS-left {
+        left: -2px;
+    }
+}
+
+#exampleSlider .MS-controls .MS-right {
+    right: 10px;
+}
+
+@media (max-width: 992px) {
+    #exampleSlider .MS-controls .MS-right {
+        right: -2px;
+    }
+}
