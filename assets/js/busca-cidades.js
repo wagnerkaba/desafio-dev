@@ -15,11 +15,21 @@ function buscarCidades(estado) {
             }
         };
     
+        // Para entender este código, vide: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
         fetch(url, options)
         .then(
-            response => response.json()
+            response => {
+                resposta = response.json();
+                console.log(response);
+                console.log(resposta);
+                return resposta;
+
+            }
         ).then(
+
+
             data => {
+                console.log(data);
                 popularSelectCidade(data);
             }
         )
